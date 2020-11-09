@@ -14,7 +14,7 @@
 
   --clr-light: #fff;
   --clr-dark: #303030;
-  --clr-accent: #A2E8DD;
+  --clr-accent: #01A7C2;
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -137,7 +137,7 @@ header{
 }
 
 .logo{
-  max-width: 100px;
+  max-width: px;
 }
 
 .nav{
