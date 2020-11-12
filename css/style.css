@@ -308,9 +308,43 @@ header{
 }
 
 .service{
-  max-width: 500px;
+  max-width: 300px;
   margin: 0 auto;
 }
+
+.service::after{
+  content: '';
+  margin: 1em;
+}
+
+.service h3{
+  margin-bottom: 1em;
+}
+
+.skill-container{
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  gap: 10px;
+}
+
+.skill-container-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2px;
+  width: 7em;
+  height: 7em;
+  padding: .5em;
+  background-color: var(--clr-light);
+}
+
+.skill-icon{
+  width: 100%;
+  height: 100%
+}
+
+
 
 @media (min-width: 800px){
   .services{
@@ -323,6 +357,26 @@ header{
   .service + .service {
     margin-left: 2em;
   }
+
+  .skill-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    gap: 10px;
+  }
+
+  .skill-container-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2px;
+    width: 4em;
+    height: 4em;
+    padding: .5em;
+    background-color: var(--clr-light);
+  }
+
+  
 }
 
 .about-me{
