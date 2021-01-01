@@ -514,3 +514,13 @@ header{
   margin-left: auto;
   margin-right: auto;
 }
+
+.project-links{
+  display: flex;
+  justify-content: space-around;
+}
+
+.portfolio-item-individual figcaption {
+  text-align: center;
+}
+
