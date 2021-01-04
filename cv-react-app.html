@@ -13,7 +13,7 @@
 <body> 
   <header>
     <div class="logo">
-      <img src="img/kenh-logo.png" alt="">
+      <a href="https://kenholston.com"><img src="img/kenh-logo.png" alt="kh logo"></a>
     </div>
     <button class="nav-toggle" aria-label="toggle navigation">
       <span class="hamburger"></span>
@@ -31,17 +31,34 @@
   <!-- Introduction -->
   <section class="intro" id="home">
     <h1 class="section__title section__title--intro">
-      Project: <strong>CV Application</strong>
+      Project: <strong>React CV Application</strong>
     </h1>
     <p class='section__subtitle section__subtitle--intro'>a cv form app built with react</p>
-    <img src="https://via.placeholder.com/770?text=Dev+Image" alt="" class="intro__img">
+    <img src="img/PortfolioImages/cvApp/CV-Application.png" alt="CV React Application" class="intro__img">
   </section>
 
   <div class="portfolio-item-individual">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae vero architecto eveniet placeat ipsa. Maxime, similique at vel voluptates officia ea tempore, cupiditate eaque, ipsa unde reiciendis quaerat error commodi.</p>
-    <img src="https://via.placeholder.com/3060x936?text=Project+Details" alt="">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, sequi quidem iste voluptatibus minima dolorum deserunt laboriosam repellendus id ut ad illo esse, quia inventore quibusdam in dolor, fuga nostrum?</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident quae veritatis, consectetur et numquam ipsam autem ex quibusdam inventore hic nulla corporis dolor doloribus eaque alias reprehenderit natus voluptate mollitia!</p>
+
+    <div class="project-links">
+      <h4><a href="https://github.com/kholston/cv-application">View Source Code</a></h4>
+      <h4><a href="https://kenholston.com/cv-application/">View Project</a></h4>
+    </div>
+
+    <p>The goal of this project was to build a CV application form which fields could be edited after initial submission using ReactJS.
+      After the form is submitted, the information will be saved to the components state. In the start of this project each component had it's state lifted to the overall
+      cv application parent. This worked well however it lead to a very dense form parent wit the states of all the child components. Since this was a simple application,
+      I decided that it would be better for each component to handle its own state. This allowed components to be removed or added without having unused state values in the parent. </p>
+    <figure>
+      <figcaption>Empty CV App Forms</figcaption>
+      <img src="img/PortfolioImages/cvApp/cv-app-empty.png" alt="Empty CV Application Form">
+    </figure>
+    <p>When this project was first completed react classs components were used for each component. Since the components were similar this led to a lot of repeated code. 
+      I decide to update the app using functional components to clean up most of the repeated code. In the end it increased the readability of the scripts.
+    </p>
+    <figure>
+      <figcaption>Filled CV Forms</figcaption>
+      <img src="img/PortfolioImages/cvApp/cv-app-filled.png" alt="Filled CV Application Form">
+    </figure>
   </div>
 
   <!-- Footer -->
