@@ -13,7 +13,7 @@
 <body> 
   <header>
     <div class="logo">
-      <img src="img/kenh-logo.png" alt="">
+      <a href="https://kenholston.com"><img src="img/kenh-logo.png" alt="kh logo"></a>
     </div>
     <button class="nav-toggle" aria-label="toggle navigation">
       <span class="hamburger"></span>
@@ -21,7 +21,7 @@
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-        <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+        <li class="nav__item"><a href="index.html#services" class="nav__link">My Skills</a></li>
         <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
         <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
       </ul>
@@ -31,17 +31,38 @@
   <!-- Introduction -->
   <section class="intro" id="home">
     <h1 class="section__title section__title--intro">
-      Project: <strong>Blog API</strong>
+      Project: <strong>Member's Only</strong>
     </h1>
-    <p class='section__subtitle section__subtitle--intro'>a blog api built using express</p>
-    <img src="https://via.placeholder.com/770?text=Dev+Image" alt="" class="intro__img">
+    <p class='section__subtitle section__subtitle--intro'>a blog api built with express</p>
+    <img src="img/PortfolioImages/membersOnly/Members-Only.png" alt="" class="intro__img">
   </section>
 
   <div class="portfolio-item-individual">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae vero architecto eveniet placeat ipsa. Maxime, similique at vel voluptates officia ea tempore, cupiditate eaque, ipsa unde reiciendis quaerat error commodi.</p>
-    <img src="https://via.placeholder.com/3060x936?text=Project+Details" alt="">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, sequi quidem iste voluptatibus minima dolorum deserunt laboriosam repellendus id ut ad illo esse, quia inventore quibusdam in dolor, fuga nostrum?</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident quae veritatis, consectetur et numquam ipsam autem ex quibusdam inventore hic nulla corporis dolor doloribus eaque alias reprehenderit natus voluptate mollitia!</p>
+    <div class="project-links">
+      <h4><a href="https://github.com/kholston/members-only">View Source Code</a></h4>
+      <h4><a href="https://nameless-tor-24854.herokuapp.com/messages">View Project</a></h4>
+    </div>
+    
+    <p>This is an Express app built to implement PassportJS authenication. It has three types of user accounts, User, Member, and Admin, with each type having different levels of access to information. Users are stored in a Mongo Database.</p>
+    <figure>
+      <figcaption>User Sign Up Page</figcaption>
+      <img src="img/PortfolioImages/membersOnly/user-sign-up.png" alt="">
+    </figure>
+    <figure>
+      <figcaption>User Sign In Page</figcaption>
+      <img src="img/PortfolioImages/membersOnly/user-sign-in.png" alt="">
+    </figure>
+    <p>Building this app helped me practice building a solution to create and authenticate users. Also learning how to give users different permissions. In my implementation upgrading an user account is as simple as knowing the correct url and access code. This app could be changed to generate a random string for the access code and have it sent to the email address on file. For this implementation i chose to keep it simple to focus on authentication first and foremost. </p>
+    <figure>
+      <figcaption>User Message View</figcaption>
+      <img src="img/PortfolioImages/membersOnly/user-message-view.png" alt="">
+    </figure>
+    <figure>
+      <figcaption>Admin Message View</figcaption>
+      <img src="img/PortfolioImages/membersOnly/admin-message-view.png" alt="">
+    </figure>
+    <p>Admittingly, in the start of this project, separating the configuration of the passport authenication and the mongodb connection gave me some trouble. Most of the documentation has the configuration setup in the same file as the apps entry file. Setting up the configuration as a module and importing it in only needed a few tweaks from the example implementation.</p>
+    <p>Overall I was able to get a better grasp on authenication strategies and integrating them into a REST-like system.</p>
   </div>
 
   <!-- Footer -->
